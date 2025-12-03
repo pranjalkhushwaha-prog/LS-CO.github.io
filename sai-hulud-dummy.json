@@ -1,0 +1,22 @@
+{
+  "malware_name": "Shai-Hulud",
+  "source": "Internal Test IOC List",
+  "last_updated": "2025-01-01",
+  "compromised_dependencies": [
+    {
+      "package": "@ctrl/tinycolor",
+      "malicious_versions": ["4.1.1"],
+      "ioc_type": "Supply-chain malware",
+      "notes": "Lifecycle scripts could be weaponized to exfiltrate tokens."
+    }
+  ],
+  "suspicious_ioc_patterns": [
+    "preinstall",
+    "install",
+    "postinstall",
+    "setup_bun.js",
+    "bun_environment.js"
+  ],
+  "test_purpose_only": true,
+  "risk_warning": "This file contains IOC metadata only — no executable malware."
+}
